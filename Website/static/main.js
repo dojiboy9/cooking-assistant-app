@@ -141,11 +141,11 @@ $("#mic-button").click(function () {
         });
       } else {
         if (!found) {
-          stream.pause();
+          //stream.pause();
           if (failed != 0)
           watsonSay("Sorry, I didn't quite catch that!", function() {
             window.setTimeout(2000);
-            stream.resume();
+            //stream.resume();
           });
           failed += 1;
         }
