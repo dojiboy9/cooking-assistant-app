@@ -140,9 +140,13 @@ $("#mic-button").click(function () {
         });
       } else
       if (!found) {
-        stream.pause();
+        stream.stop();
         watsonSay("Sorry, I didn't quite catch that!", function() {
-          stream.resume();
+          stream = WatsonSpeech.SpeechToText.recognizeMicrophone({
+            token: stt_key,
+            keepMicrophone: true
+          });
+
         });
         failed += 1;
       }
