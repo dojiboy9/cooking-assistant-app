@@ -129,6 +129,7 @@ $("#mic-button").click(function () {
         }
       }
 
+      console.log(failed);
       if (failed == 2) {
         failed = 0;
         found = true;
@@ -138,14 +139,15 @@ $("#mic-button").click(function () {
         watsonSay(commands[k].response, function() {
           setState(nextState);
         });
-      } else
-      if (!found) {
-        stream.pause();
-        watsonSay("Sorry, I didn't quite catch that!", function() {
-          window.setTimeout(2000);
-          stream.resume();
-        });
-        failed += 1;
+      } else {
+        if (!found) {
+          stream.pause();
+          watsonSay("Sorry, I didn't quite catch that!", function() {
+            window.setTimeout(2000);
+            stream.resume();
+          });
+          failed += 1;
+        }
       }
     }
   });
