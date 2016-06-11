@@ -3,7 +3,7 @@ var stateMachine = {
     "prompt": "Hello, what would you like to make today?",
     "commands": [
       {
-        "words": ["fruit", "salad", "make", "would like", "make", "solid", "fits all", "about", "its", "eccentrics our"],
+        "words": ["fruit", "food", "salad", "make", "would like", "make", "solid", "its all", "it's all", "about", "its", "eccentrics our"],
         "response": "Fruit Salad. Yummmy. Delicious!",
         "goto": "ingredients-ready"
       }
