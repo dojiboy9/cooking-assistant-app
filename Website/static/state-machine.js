@@ -5,7 +5,7 @@ var stateMachine = {
       {
         "words": ["fruit", "salad", "make", "would like", "make", "solid", "fits all", "about", "its", "eccentrics our"],
         "response": "Fruit Salad. Yummmy. Delicious!",
-        "goto": "count-servings"
+        "goto": "ingredients-ready"
       }
     ]
   },
@@ -49,7 +49,7 @@ var stateMachine = {
     "prompt": "Are you ready for the ingredients?",
     "commands": [
       {
-        "words": ["yes", "yup", "yep", "sure", "yeah", "m ready"],
+        "words": ["yes", "yup", "yep", "sure", "yeah", "m ready", "I am"],
         "response": "OK. Here we go!",
         "goto": "list-ingredients"
       },
@@ -66,7 +66,7 @@ var stateMachine = {
     "prompt": "You will need 1 banana, 1 cup of grapes, 1 cup of strawberries, and ¼ cups of orange juice. Are you ready?",
     "commands": [
       {
-        "words": ["great", "m ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok"],
+        "words": ["great", "m ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok", "I am"],
         "response": "Let's begin!",
         "goto": "instructions-step1"
       },
