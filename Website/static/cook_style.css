@@ -9,25 +9,23 @@
 .divider-color         { border-color: #B6B6B6; }
 */
 
-
-html, body {
-  overflow-x: hidden;
-}
 body {
-  position: relative
+  position: relative;
 }
 
 body, html {
+	overflow-x: hidden;
 	display: flex;
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
+	height: 100%;
 
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Karla', sans-serif;
 
 	color: #212121;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .splash-container {
@@ -40,8 +38,12 @@ body, html {
 	background-color: #b2dfdb;
 }
 
+.splash-container img {
+	width: 700px;
+}
+
 .app-name {
-	font-size: 40px;
+	font-size: 130px;
 	color: #00796b;
 	font-family: 'Pacifico', cursive;
 }
@@ -58,13 +60,13 @@ body, html {
 	justify-content: space-between;
 	align-items: center;
 
-	width: calc(100% - 16px);
-	height: 44px;
-	padding-left: 8px;
-	padding-right: 8px;
+	width: calc(100% - 60px);
+	height: 140px;
+	padding-left: 30px;
+	padding-right: 30px;
 	background-color: #009688;
 	color: white;
-	font-size: 18px;
+	font-size: 54px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -74,7 +76,7 @@ body, html {
 }
 
 .icon {
-	height: 26px;
+	height: 50%;
 }
 
 .active-icon {
@@ -91,7 +93,7 @@ body, html {
 
 
 .back-icon {
-	height: 22px;
+	height: 40%;
 }
 
 .space-holder {
@@ -104,18 +106,18 @@ body, html {
 	flex-direction: row;
 	align-items: center;
 
-	height: 80px;
-	border-bottom: 1px solid #EBEFF0;
+	height: 220px;
+	border-bottom: 1px solid #B6B6B6;
 }
 
 .list-photo {
 	display: inline-flex;
 	justify-content: center;
 
-	height: 80px;
-	width: 100px;
+	height: 220px;
+	width: 270px;
 	overflow: hidden;
-	margin-right: 10px;
+	margin-right: 30px;
 }
 
 .list-photo img {
@@ -132,11 +134,11 @@ body, html {
 }
 
 .list-name {
-
+	font-size: 50px;
 }
 
 .list-time {
-	font-size: 12px;
+	font-size: 40px;
 	color: #727272;
 }
 
@@ -146,15 +148,14 @@ body, html {
 	align-items: center;
 
 	width: 100%;
-	height: 44px;
-	position: absolute;
+	height: 140px;
 	background-color: #009688;
 	color: white;
 	box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px 2px rgba(0,0,0,0.24);
 }
 
 .tab-item img {
-	height: 28px;
+	height: 50%;
 }
 
 
@@ -170,19 +171,20 @@ body, html {
 }
 
 .recipe-content {
-	margin-left: 10px;
-	margin-right: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 .title {
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .recipe-title {
 	display: block;
-	font-size: 22px;
+	font-size: 60px;
+	margin-bottom: 20px;
 }
 
 .time {
@@ -194,33 +196,34 @@ body, html {
 }
 
 .ingredients-title {
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-bottom: 10px;
-	font-size: 20px;
+	font-size: 36px;
 }
 
 .ingredients-list {
 	list-style-type: none;
 	list-style-position: inside;
 	padding-left: 0px;
-	line-height: 26px;
+	line-height: 60px;
 	margin-top: 10px;;
-	margin-bottom: 10px;
-	padding-bottom: 16px;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
 	border-bottom: 1px solid #B6B6B6;
 }
 
 .quantity {
-	width: 30px;
+	width: 100px;
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
+	font-size: 48px;
 }
 
 .instructions-title {
 	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 20px;
+	padding-bottom: 30px;
+	font-size: 36px;
 }
 
 .instructions-list {
@@ -232,7 +235,7 @@ body, html {
 }
 
 .instructions-list li {
-	padding-bottom: 12px;
-	padding-top: 12px;
-	border-bottom: 2px dotted #B6B6B6;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-bottom: 6px dotted #B6B6B6;
 }
