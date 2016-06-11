@@ -128,6 +128,7 @@ $("#mic-button").click(function () {
           if (nextState == "ingredients-ready") {
             transition_to_salad();
           }
+          failed = 0;
           watsonSay(commands[k].response, function() {
             setState(nextState);
           });
