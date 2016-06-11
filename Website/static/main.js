@@ -3,11 +3,13 @@
 var curState = "";
 var acceptInput = 1;
 
-var tts_key = "D1ppV4jqa7OQlz0VSeq7LrB49k3bA3in1YRjHELVq3DHMUetWUSXe8B9iC50Pgab1ybXzJBcwWgYj56icFBNtuGzHgedEh14GDlibLQYI2Rmk5pCnKizR114SwFCS7glfkzm1pX8AY7%2Fmvqwh6u%2Bl59yOMtiiNBQ4LpMX01IL9KPtGcfr8kSpF3ID%2B8mfImxUfX5fU1T4qkqxPVa3eWiNWEV1eXsu9S1jYUnprvYk6t40Ru0PQV51BM6UojLZ2SuM1aIBBHvodc8rmK1n89P%2BGu6372TI7Swn2RPsRQwC4PF1zXoFmA4MovaVT%2BAsBKsClJF2q6G2BZJFQcUGC4jSKjTBmLEKzIOoZlBUPrvZP4vOjXW4iZqcG5PpDL1h5UDzAdctkYfedD0uw7iJUjmP5PE%2BcQhz77TcacjgowW4gAcZRJPH%2B%2FbdkMzsjgrfgK1bGhu%2FYLQgdRvv%2FVC27%2F00O9c3%2FouCbcXvR8k9kJrngBKXyZxQPfLDYNYGuVCQYgVLOJGaAoTb8fS4l1dclOS%2FeJrYLEOX%2B3oXkYHIC9kvd3vfKvd%2FVwk4la8wFpljAdWDbGs2EajGyZX4%2BCqakgTVjrjdhwqhQGUxbZDszMSiJxK9HvIsDsB2L1y%2BIgUTAtxETUxo9t1csojo3W777Vw7UDrmyD7OsKTqqvLLOo%2F%2B44c%2FhCrhHyMMt%2BZWoWVG1n6cD9gecsfJY9Qg9rfVQS%2FKcSTePCAaKYVd9mWlZiFkPHOX7xMBLENYzFtJLrT0dkRueT%2BsdeXx1R5m8OprdSZFIbjAwShzLW0MLwLUOQktm4gzcDZyVvXlJTzP2sN4OeRIU5j%2BbE%2FiC4FJlDcKkRKTbok4q02lMjc";
-var stt_key = "Pl558PQ0k%2Fcery3EJBEaaSV1MOL%2BsuCMafPIet2iUKwCR4sfOby6MWvwvI%2F9NNbobvVbDvislYvJX98J0hWRcuPATujEnAy331ShEHuY6psygenMFWp8rVOtFjVnQFjYg41P1jlh1haQyLw25u0YfyOEvqukqE%2FVWH9LVM%2BrwGYEyh7Z6F9Te4HsjQKdPsYjmI2MLzRWDyRQUCYylK%2FDDq4g8bkPTkpkYjwnK%2FxUybUqQ4njUkp7vOMP6oKm%2FfvwLxhRUG22q5zO22tK2yN91KnXyHz09VRouTIICHYcN1oiBSkbKiNBq0%2FBYs%2B3zYa%2BgH00i4f1HIhtjc5DkCZ8P3fvZV%2FDCiL8c98rVLJGnfXRWIb7omHDhl7uaDQ6ykkEpDv358feLCT8lRJo%2BkGkdkiI0ZrXPx%2BjOKrnZABkEVCa8FJTJW7az1NSTexIa10EMtbiffj0obsYMNkwnywcUpZe9bB8qWc2svdILfvL58DCC%2Fv1Dn8rLYH3TvJ7sHQ6ZjjMfr6Vi3p4UjLQ8Ly7oSjy62pDaiWl3dgxDyvwazN4aKOVgVHnTx3cOnXWQW1oUE5Hmd8iCYo0f857H59bNQc9PfDBl%2FMmo1c0zKwj3CN60tPXKAs0BfT8HCy0l36eMgOnN%2FWGPvS0Kxr%2FghRbb%2F6VgbMjl2ieL1FI2duYPt8KZ%2BAQk5YOVrbxP0R09WdAStXp2%2FBb1U0NMgZG15E3UknLgbgtIDbBiy%2BREVD7lwiab6PbbDJK1xs%2FByNXgi8LNQRUb9Mt9KsNFOVAUFwb6FRlB2A%2BF1DBm0L0WCds%2B4%2FblFkGR9dPvIId7OapC8t3Fe0uSpfV5KOyGF1TEhkokgGUfaFxZ%2FDZ";
+var tts_key = "nGqg7oUVKTswCrGX1rQR%2FW8BZHH8XM6edHAFXvOYjU3638M8WZxsLs5noCoHHwuwW0kNF0VO%2FF3L0ZXwiGZHi2ARKbHwSl2CKHJ1A8wjnDXnPFvdyQdg1NzpI1yV79ZuGAyaTOwNO%2Bp8kCWPFC%2BQFCbYC0fXFDdN2oCP0DYrhnspfltaYvksmlp6o1I56IjPeQogYPVS7uDE5OlssA5NXnuRA2HhBMm8DG3kTzGTNZza2knLqWsU%2F1t%2Bmqqa337V%2BsagZ%2FDTqc%2BwPxiMQJFMeutTzZXeftC9Zj0qnohIRqm9DjxqCw%2FIMWcy5sM375A%2FWjWNz2TlbOqA9V028jFZrIYLb80DuN9yMQRFiQRDyMymAQFUmSZ%2FxTrGHSPgSz6Nh6e1hqQgjpuzlkrynQ%2FVUErbvZndhdZyQZx6q5jiAQLIyaG1%2BpxpyqKkOf1zFj%2BIMmRyRSqWyMAnCeCTkzq9j8DQRkybRml%2FHmqH6ykPOoejQUvbZKwBoKS%2F7075nBI4r4mltYHBZvTmqmdjULVTzEIrigfleLivoyepcdIfrPztsx9ZnxnTfjn5emof9nreyh7id4dBhmTDDPTdUqBfJt370auoYd6jln%2Fy%2BbE5rgVN6JCSgXboWOINK0p1jQK0uTyVT%2BPu5FeXkBCJfhGY3V6dG7ykADA3Hvlbg2eso3fT%2Blz5y%2FPVJFMZU2fJWY%2Bb2P7pYB%2F4Cjd0BKtHyurONeqAU8Jy2HQTy9XE%2FYWAW%2FowXfYsp%2F%2Fx%2Bxfe%2ByUBGzkJTTfEt09TaqbfEz7fLrvR4wy573vm5x6KeWfKX0HKSvlxxb0JxRq%2Fz8ZsrRE3XyoGh6r2E3Hnd7hFMlu1KbYOCVPJMO1TAVZJ";
+var stt_key = "5lomA84s4spau2vfW795e9el52HhUHC%2FGSaqHvBjjSy14hpnbAPzWBo7dcaJxj3Q8OtBNnXMwdhwfK2chB8vSXW6yd4bJ9%2BbO12wDO3zpjbfnLb%2F3cgp8ECRMm5ZLnxBkgt01zUMiW1c9MszlMKyUHjH3%2BJtlMkcAPbAzfHo%2BHDz5X7L8ov8Tmljw26dwFi0b%2FUcmiNkGvg5WvmUPf9uP48STC0bjIOVRcTfBZkq%2B9UZUs3u9vc4fyefzLw28LaUwuvoB%2BEcBd7xO4mtE4MyuI%2FnH5Ho0HNsL2CdZVd1yRoQb9MrDxI4qwA9EznawLnxfLfxY%2FM6LVIvss%2B8oZC4vJbK71uQ2LEDs5DtPrK1%2BJfQEuE29RidZYxUn5c8szrtLBKUqX4tsHrpozNNmFDdbYDnRq%2Bd7NOfJMSni9JoA9AgFPpTGpKJXD8z3FP8nANPUE%2FEDJyUfHa2c%2FYVuOpUNEWVXG4tHlc81fhla5BEWMz8XGVCDv1hQje3mJAJAkoJYpvaFCdgLTh5BSdOCAhdWjrR2hhj9%2BoAMH7aPF3dA1sQ1z%2BGbEc7oA7c2KOijr41XF9YkWllXCmq3Dy43A%2B3PVBriNQZWAPw0iYZfcZm%2BIFvYQY0zAIA1KYL6aaM%2FUF7o6i93ZGy6W0j45hNj2qdimyIAn76Loa5X1YD62vReREg10fv3WoTkVm6aMZDcJofO8b0xNlgUd1eEEHM%2B%2F6IDq4grhlLumpxik%2FdczwhdWgVABWYuCScKfl48BYNHk5sb%2FV1gqe2PPZeCuhqHDWzzvOxcha4HTuRwxiIxsJ4fPZb%2BCz6HE3GVVP8Pf2nEIE0HZs0z6q7uJ6yoveYums0QBnG0PwDJVkh";
 
 var stream_loaded = false;
 var audio;
+
+var failed = 0;
 
 function transition_to_salad() {
   // First animate by scrolling down to the salad item
@@ -119,6 +121,7 @@ $("#mic-button").click(function () {
       // Walk through the array of key words and see if any one was found
       for (var i = 0; i < keywords.length && !found; ++i) {
         if (data.indexOf(keywords[i]) >= 0) {
+          found = true;
           var nextState = commands[k].goto;
 
           // Respond. Upon completion, apply the state transition.
@@ -130,6 +133,28 @@ $("#mic-button").click(function () {
           });
 
           break;
+        }
+      }
+
+      console.log(failed);
+      if (failed == 2) {
+        failed = 0;
+        found = true;
+        var nextState = commands[k].goto;
+
+        // Respond. Upon completion, apply the state transition.
+        watsonSay(commands[k].response, function() {
+          setState(nextState);
+        });
+      } else {
+        if (!found) {
+          //stream.pause();
+          if (failed != 0)
+          watsonSay("Sorry, I didn't quite catch that!", function() {
+            window.setTimeout(2000);
+            //stream.resume();
+          });
+          failed += 1;
         }
       }
     }
