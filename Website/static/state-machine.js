@@ -15,7 +15,7 @@ var stateMachine = {
     "commands": [
       {
         "words": ["one"],
-        "response": "OK. One serving it is.",
+        "response": "OK. Let's make one serving.",
         "goto": "ingredients-ready",
       },
 
@@ -27,7 +27,7 @@ var stateMachine = {
 
       {
         "words": ["three"],
-        "response": "OK. That's a lot of food. But three servings it is!",
+        "response": "OK. That's a lot of food.",
         "goto": "ingredients-ready",
       },
 
@@ -39,7 +39,7 @@ var stateMachine = {
 
       {
         "words": ["five"],
-        "response": "OK. Five servings it is!",
+        "response": "OK. It's a party! Let's make five servings!",
         "goto": "ingredients-ready",
       }
     ]
