@@ -3,9 +3,8 @@ var stateMachine = {
     "prompt": "Hello, what would you like to make today?",
     "commands": [
       {
-        "words": "salad",
+        "words": ["fruit", "salad"],
         "response": "Fruit Salad. Yummmy. Delicious!",
-        "responseTime": 3500,
         "goto": "count-servings"
       }
     ]
@@ -15,37 +14,32 @@ var stateMachine = {
     "prompt": "How many servings would you like to make?",
     "commands": [
       {
-        "words": ["one serving"],
+        "words": ["one"],
         "response": "OK. One serving it is.",
-        "responseTime": 3000,
         "goto": "ingredients-ready",
       },
 
       {
-        "words": ["two servings"],
+        "words": ["two"],
         "response": "OK. Two servings? You got it.",
-        "responseTime": 3500,
         "goto": "ingredients-ready",
       },
 
       {
-        "words": ["three servings"],
+        "words": ["three"],
         "response": "OK. That's a lot of food. But three servings it is!",
-        "responseTime": 5000,
         "goto": "ingredients-ready",
       },
 
       {
-        "words": ["four servings"],
+        "words": ["four"],
         "response": "OK. Let's make four servings.",
-        "responseTime": 1000,
         "goto": "ingredients-ready",
       },
 
       {
-        "words": ["five servings"],
+        "words": ["five"],
         "response": "OK. Five servings it is!",
-        "responseTime": 1000,
         "goto": "ingredients-ready",
       }
     ]
@@ -57,7 +51,6 @@ var stateMachine = {
       {
         "words": ["ready", "ingredients", "yes", "yup", "yep", "sure", "yeah"],
         "response": "OK. Here we go!",
-        "responseTime": 2000,
         "goto": "list-ingredients"
       },
 
@@ -73,23 +66,20 @@ var stateMachine = {
     "prompt": "You will need three oranges, blah blah, and something else. Cool!?",
     "commands": [
       {
-        "words": ["great", "ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "ok", "okay"],
-        "response": "Not a problem.",
-        "responseTime": 1500,
+        "words": ["great", "ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok"],
+        "response": "Let's begin!",
         "goto": "instructions-step1"
       },
 
       {
         "words": ["repeat", "again", "ingredients", "what", "didn't", "hear", "sorry"],
         "response": "Not a problem.",
-        "responseTime": 1500,
         "goto": "list-ingredients"
       },
 
       {
         "words": ["serving"],
         "response": "Sure.",
-        "responseTime": 1500,
         "goto": "count-servings"
       }
     ]
@@ -106,14 +96,15 @@ var stateMachine = {
       {
         "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
         "response": "Sure thing. I said",
-        "responseTime": 2000,
         "goto": "instructions-step1"
       }
     ]
   },
 
+  // TODO: instructions-step2, instructions-step3, ..., etc.
+
   "infinite-loop": {
-    "prompt": "Well that was easy!",
+    "prompt": "I am done accepting commands. Please update the state machine file.",
     "commands": [
       {
         "words": ["suzy", "susie"],
