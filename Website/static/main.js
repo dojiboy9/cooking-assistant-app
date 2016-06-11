@@ -3,17 +3,25 @@
 var curState = "";
 var acceptInput = 1;
 
-var tts_key = "EBJ4mGEpKmzU9vGAAxms0MOy2mJKRL5dEfJsIr81sEYpUfcYPTPWHdLephdl91aRvBfxuGZYhSKXO%2B%2BDUi%2BbYwfs%2BpESYSieSO1sIOl%2BJMFfjzdcl2fbUdH4Ib5W6A7k1DheFVwz3vIi%2Fl4ieOblbxHqV7g%2FO6FFBQ8DwOShEeCzSoKcA4TEt06cVvZJGYSI1h6waeebq0MxwMqjaRsCUgGAId%2Fg4taNAi%2BBgjHJ3d%2Fw%2BA%2BFcCYr6FW64Bixz5Aao73mbfSb75Q89hVObGeiZyuoiHLdktsR0%2BRma1LHuBEaDh0x1SjBD1ZIJun36VLEKeb%2BdmuJNXNmoV0GVCi0J66BPLUSg%2BGKX1iJ8kmO2bmvTIntY55uNvKdIWlN8MgFmpVQizJS6jorHL1PFzY4qqtN6Bq6LNqCI992rgCk3ptM5jQ9ajLmRcaIsSL8E5nxcrK2o7Eallpv0WKHv9gWVZCtsZTStvVa50OVreGbAoN4GkzP3XH7jsLZvCHWrcIgX244eIdgLnWwc6wmNizcxnePH2B2QikYk1mrEeju5e9DTqONpIDzd7FtEYxsmFkJj6kAbgscv6ZKGlt9u7UIEmh6nQ8uICVhse4R7I5MjaXaVw123Os12MA9KnwNpps52Edm88Oyh5jsP98jz7RP6es%2FJr5blU4vEBRf6W9nFGj4OL8g%2FgkLT9EagtUryhAxbmrUVrYhGrnQqWCk3mGuZF00fZ%2F5oooTP4GdStCoWyRo8qOT3YpPi2ch%2BwckZP6j%2FXCFlYI65JLgLLNH2XFFXErjSYEaQiVZ%2FDZJjLF1eqdA64rnnjoPWaKWloIJ6vA5jN9FVLwVCCEO8N3m29MobACzYIJj%2Fw8j";
-var stt_key = "pEpJZ8Nse0YolMn70B23jKxY4V61LiBr1cawXB6MSBiaNo%2Bl4V2Gz8BJK9%2F%2BP6fxSZr5F01wIx6B0SmbvH%2Bdf8ZX4MZ1n0e%2F5pNItam47ZFJEgzUEpblWxh25PRKIgdg5Q9B1DCZDnaHik21%2BahBqPbk4PgNlMQfWk3PTAtZpeQKezNolfdXHwdZKe%2BM8%2BllvjMoKfKqgQ9tR1ToMmGyUETQwiJDexHTGF3kFzsbB7H6LQ%2FsKlMTn14vYXXjgNewNk9Kd41dXAgSCH07Ef8505nmwchwte9gVlh2PsXtaUkTfikzom0Q5puzbwz308xZ3vzjZMiTJxm%2FVE8lCEWTvqI020jW8IG3OA8sTE%2F1LfIEdV60oi3HikT2CYQ%2BFdnyxKz6Kz3lJRyTiDmCWIy5g8%2FXV2GfneXS5BgULs0Ciem61xXEvhFpePXfM7bbne%2BUlnCZc6IohaDS3xM24e5IHgaL5FZ6oAiEh64MZ73eNKiikk4xEzti2zvc8a9U9oSk8I6r%2FOy4xDxlfoksGFxYfoKirTBpTU6tMUcpadDBMu%2F%2B48Dp0K2iWxk2u1%2FUwH0NUyP1lHB8w0MNZXDyphW%2FEj4MQmZy%2B%2BOaOU2i%2Blejw5UQOtkP4mc5y3JDGNNEOphPKbb%2FG0S9AXJ2r0F89Szlawnigux1V%2Flb9G18C6Tek42l9kqZdlhvBoipy8QdwL56RsQav%2BxPc2Es4r8%2B2qm%2FOIO53ehyYzcV%2Bdlz8XpaaeurpKweGKick7twBxIcfMiVJrIQr2QgNzExb552guNK3p4l2dltKzEieNVlZkVWv3pRlmXePcBEPuQg48170tyfUPvKmIW851Cu%2FrMbpSGL%2B5Ba%2FfPXgyuT";
+var tts_key = "D1ppV4jqa7OQlz0VSeq7LrB49k3bA3in1YRjHELVq3DHMUetWUSXe8B9iC50Pgab1ybXzJBcwWgYj56icFBNtuGzHgedEh14GDlibLQYI2Rmk5pCnKizR114SwFCS7glfkzm1pX8AY7%2Fmvqwh6u%2Bl59yOMtiiNBQ4LpMX01IL9KPtGcfr8kSpF3ID%2B8mfImxUfX5fU1T4qkqxPVa3eWiNWEV1eXsu9S1jYUnprvYk6t40Ru0PQV51BM6UojLZ2SuM1aIBBHvodc8rmK1n89P%2BGu6372TI7Swn2RPsRQwC4PF1zXoFmA4MovaVT%2BAsBKsClJF2q6G2BZJFQcUGC4jSKjTBmLEKzIOoZlBUPrvZP4vOjXW4iZqcG5PpDL1h5UDzAdctkYfedD0uw7iJUjmP5PE%2BcQhz77TcacjgowW4gAcZRJPH%2B%2FbdkMzsjgrfgK1bGhu%2FYLQgdRvv%2FVC27%2F00O9c3%2FouCbcXvR8k9kJrngBKXyZxQPfLDYNYGuVCQYgVLOJGaAoTb8fS4l1dclOS%2FeJrYLEOX%2B3oXkYHIC9kvd3vfKvd%2FVwk4la8wFpljAdWDbGs2EajGyZX4%2BCqakgTVjrjdhwqhQGUxbZDszMSiJxK9HvIsDsB2L1y%2BIgUTAtxETUxo9t1csojo3W777Vw7UDrmyD7OsKTqqvLLOo%2F%2B44c%2FhCrhHyMMt%2BZWoWVG1n6cD9gecsfJY9Qg9rfVQS%2FKcSTePCAaKYVd9mWlZiFkPHOX7xMBLENYzFtJLrT0dkRueT%2BsdeXx1R5m8OprdSZFIbjAwShzLW0MLwLUOQktm4gzcDZyVvXlJTzP2sN4OeRIU5j%2BbE%2FiC4FJlDcKkRKTbok4q02lMjc";
+var stt_key = "Pl558PQ0k%2Fcery3EJBEaaSV1MOL%2BsuCMafPIet2iUKwCR4sfOby6MWvwvI%2F9NNbobvVbDvislYvJX98J0hWRcuPATujEnAy331ShEHuY6psygenMFWp8rVOtFjVnQFjYg41P1jlh1haQyLw25u0YfyOEvqukqE%2FVWH9LVM%2BrwGYEyh7Z6F9Te4HsjQKdPsYjmI2MLzRWDyRQUCYylK%2FDDq4g8bkPTkpkYjwnK%2FxUybUqQ4njUkp7vOMP6oKm%2FfvwLxhRUG22q5zO22tK2yN91KnXyHz09VRouTIICHYcN1oiBSkbKiNBq0%2FBYs%2B3zYa%2BgH00i4f1HIhtjc5DkCZ8P3fvZV%2FDCiL8c98rVLJGnfXRWIb7omHDhl7uaDQ6ykkEpDv358feLCT8lRJo%2BkGkdkiI0ZrXPx%2BjOKrnZABkEVCa8FJTJW7az1NSTexIa10EMtbiffj0obsYMNkwnywcUpZe9bB8qWc2svdILfvL58DCC%2Fv1Dn8rLYH3TvJ7sHQ6ZjjMfr6Vi3p4UjLQ8Ly7oSjy62pDaiWl3dgxDyvwazN4aKOVgVHnTx3cOnXWQW1oUE5Hmd8iCYo0f857H59bNQc9PfDBl%2FMmo1c0zKwj3CN60tPXKAs0BfT8HCy0l36eMgOnN%2FWGPvS0Kxr%2FghRbb%2F6VgbMjl2ieL1FI2duYPt8KZ%2BAQk5YOVrbxP0R09WdAStXp2%2FBb1U0NMgZG15E3UknLgbgtIDbBiy%2BREVD7lwiab6PbbDJK1xs%2FByNXgi8LNQRUb9Mt9KsNFOVAUFwb6FRlB2A%2BF1DBm0L0WCds%2B4%2FblFkGR9dPvIId7OapC8t3Fe0uSpfV5KOyGF1TEhkokgGUfaFxZ%2FDZ";
 
 var stream_loaded = false;
 var audio;
 
 function transition_to_salad() {
-  // First, fade the current page to the left
-  //$("#slide").animate({width:'toggle'}, 700);
-  // Next, load the proper new page
-  $('body').load("/fruit_salad");
+  // First animate by scrolling down to the salad item
+  var top = $("#fruit-salad").position().top - 500;
+  $(".content").animate({ scrollTop: top}, 1000, "swing", function() {
+    setTimeout(function(){
+      $("#fruit-salad .list-item").addClass("on_tap");
+
+      setTimeout(function(){
+        // Next, load the proper new page
+        $('body').load("/fruit_salad.html");
+      }, 200)
+    },500)
+  });
 }
 
 $("#mic-button").click(function () {
@@ -71,10 +79,6 @@ $("#mic-button").click(function () {
     } else {
       console.error("Unknown state: ", state);
     }
-
-    if (state == "ingredients-ready") {
-      transition_to_salad();
-    }
   }
 
   setState("home");
@@ -118,6 +122,9 @@ $("#mic-button").click(function () {
           var nextState = commands[k].goto;
 
           // Respond. Upon completion, apply the state transition.
+          if (nextState == "ingredients-ready") {
+            transition_to_salad();
+          }
           watsonSay(commands[k].response, function() {
             setState(nextState);
           });
