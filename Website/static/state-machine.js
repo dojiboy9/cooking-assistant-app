@@ -49,7 +49,7 @@ var stateMachine = {
     "prompt": "Are you ready for the ingredients?",
     "commands": [
       {
-        "words": ["ready", "ingredients", "yes", "yup", "yep", "sure", "yeah"],
+        "words": ["yes", "yup", "yep", "sure", "yeah", "m ready"],
         "response": "OK. Here we go!",
         "goto": "list-ingredients"
       },
@@ -66,7 +66,7 @@ var stateMachine = {
     "prompt": "You will need 1 banana, 1 cup of grapes, 1 cup of strawberries, and ¼ cups of orange juice. Are you ready?",
     "commands": [
       {
-        "words": ["great", "ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok"],
+        "words": ["great", "m ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok"],
         "response": "Let's begin!",
         "goto": "instructions-step1"
       },
