@@ -3,12 +3,12 @@
 var curState = "";
 var acceptInput = 1;
 
-var tts_key = "qTlj5si5XfR3kUjyVsTbPj3YAPQ1uxEcsw9ZizB4GKSuejh2nuXROfMmMGtWDt0UEUYJ09I84NQES1ILeNBoaN18jGMdS4xp9P6eVOkJnzun0p6oTngI5uOEVsi%2BdttdNeyY0VVxtyLvaWERgi7O7H7VgEgtK6GloliKCcNQcwBlT7eEirKkl7jZWZYCeqnp2XivqmGCjChh2ZxWFniTlfwApbUyckRitMvsWl95Yq8%2FMo57NIejl5ZIXcX6DGsLo9Ra20%2FypFbm7gWXOUgvcrnY1QV2UG7b7KSqcFDZ2b0o8zIMHgyWKZPbQ1S9ByWVD6VTMCc%2FJqgmDMcav3E9E%2B4RN4BNNebUbUVAOH5hpSo%2Bwi%2FRURMp5U7rv28j130q6ILbjzcgC3wpr6sRq0pcLYnw1QkEYf1EpS9GhoAIBAS9WNWDsWOkYhe4gxU1EddyA3Q5q7Wz4e%2FYOSaw5NXx9T%2FORjOSZehodTDAlt0wOEvOn8eAVqT0yq3Fj%2FgG2Tktq2NFHschypMWhjd4snmLbCVnspmCkcfwblhdcu%2FXTDxILF1JQjSYV%2FQSTljRT2F6r%2FyDIlGirl9uf%2BEVqiabk026S65R3yGzJC3gmAyyQMPPVXlHM4kfG91v0RF2tOEJDY5mJhOyKwjeKofflje6cYgMKO9Gj3DkhvMl0rD2yaLsXN5eH0318YZgUvhXj3ET8TuI3P1SOQQV2zR3MIW8L3imc%2BgPF1LaDdeFHWcJ%2F2zr4fmoMhfBwlg4JQWoBEre4jTXqxovN%2FLAD8gCegudjrmLSakMQDTypJr0s5B59z4%2Bx5GRuKGhFUa0HKMasis%2Bs7SbaWQ89BQTKx90xZ3EQbKwTBFd7O2h";
-var stt_key = "n7N7h27lzkiSyEQ3zZWCk1ORbaaYoQ385fBF9mD%2BOU6ET6hpS9NARxOhBPSOVQr1PO4M1IB85HJFe0tH0c%2FUyPKvyY%2B7kN6sPYC%2BtgbS5P82ZQIz6cWUvGU0Rl%2BjkgclNoLRPR%2BUlf1gM%2BxeZvF%2BKdcUiu70WxrWTawh8nLjT8Ad3zU7lnJf4j1nh%2BFw2QyO4JgUOnB2l75e%2FQurR%2FjZeCm4Dg7tVNYkBt%2BDfkB4hS5HLAMjntXH779RaMqpHzQFGtaMbvD826aF9jDjX85nlmDBaTfvyBRg73gYjoc3sbIZrRWmArRUl44ZIVotatEP3wQ%2Bf6RHNQyZ%2BFq5sRvIIOxv6Js%2BR6T%2BabWk2tAouwuRekxAKw6pHHaZ%2Bhuc6fUJwDU6Swigr9rIwJwrADEZvoCHPT6CJ%2BNFS20vV4azG%2Fy4V5PXij5mIZxcHWVBe0i8DlebxYgTwU3iGa00aEouSofa9aOI%2FP2%2FdmNc3W1LoHvDrFzL6a3ZKTCIECoV5vFi5rIdAMEnIJPTZ9wr1Pywj8hZ272E5384f5Pqk%2BzK%2F8Gj93oqiEIgKiP7XMmIqd85VF87gH9YnyRCbEzINxySqgpB8VSFouiwmjYia88QehXsPL04e9DngRN%2BOyIZw%2FzrtMtXveFG%2FtY1de9xN5KhBCsQe1Gamjmxcfm0NozAopYEgd32eYY9XTsjaCPjthCdYbG0QS4wb6EXLdmN72vTPgEC%2FndYbH1pOW%2BzAdjfY1mjNbAaHhF7sVEu3Kpdwr1dmXMVsMopaHKZbMQJrl7X1NTZRrmLqkIirH%2BX%2Fc6YNS6IUDWo32X7To9YZ46uYeC4VmL61m4mM%2FQ1WbX0vwRU3AW8%2FTdo%2F%2BRi";
+var tts_key = "P%2BtGfUJQeKX0cB4cGmUH%2FHj2f0ZVMgMjFlThGijSIVDX719eyaHLUyHkBCj%2B2q6DHrX93VVCqUL9ae8gAuPBcCV0Jhpvry6cU5vx6hNpRe0ZXNbeXtu%2BCwaSqEAri7yjvo%2BgWvbIeDdbaDb7fmH%2B79iK6ZPFOac17L3LGFtNgEri4cxCyqJYmaLny7KFRGyKeqIJLdbtYF2Sw2AAUg1937ipC52fKoRmFhF4dwoUYvN9vx0kgpZhWsBcgkP4Lp5KhW%2FJnM9UIpmIMkbODNTCPBENhrk4E69MtEdVM7h0s14O9XZwW4%2BhyDRh7hg5555VC6e%2Fi1%2FU7vZ0saaHhxVsWc%2B5W0YfaL8qrLb7rLQhGq%2B8%2Fd7rZoJfoz4Afw08DYs%2BtlxSg2ijBIJ34nyOzHUlNCaZ%2FocT39GloolAKoif8bnM5q4DXXIyKUgZn25ZGXENg89UppiMjAmgMA4fv2FFQk0KBSkW0loh5ZcZ2nBCQBd5GciyVBTTjULiarak08Sn2nl4%2Bi5NeLOtYHdjog9Y9Q0aPwThw11kEzJMcQk9usL6wnxWFvLxHiiwgW5DXSYepRI2kdfbgRuPv6TnbfUV%2F4ffTNQAX7WvHDgmfwD%2FdvQBwnVvlAWCH5IxGJbOQbn4CuogHS7BoMREtGCQfySvc1d3D6YfVTE%2FCVeo4lGCw9KW9BW2O63MHHzeqEShZKlKB5x8ApEz3%2FG%2BAJO9C1%2FhZNx%2BuV4Sxnk3jaOfAVx%2FDBGO3SUCgS3oUITRJAYv2O0dCKlNaTP0Z69FIW6Uy4aDNMAjcEKB%2FkADszlsjEjFNrVfQ4ie7ny4QmuGRti0wqZhP8km63%2BBIgLxTgRrGyyXlF%2BzKRXKxlod";
+var stt_key = "sNVOGqpIBXQyZm1EWK3vD5YlFpDjNzXQZNHNkZPvhsIbw%2FkO53qKnpGYAiXGHflJuTHC8Q9c%2FFjAT2uSI3w3Gm%2F%2BZyF0f77az9pOhiN0%2F0I%2B6ykw%2F%2BlogpIGaYMZPKYShhAyPlgUvKNPmrxkTU3PT4C2B5uonkvi3CdoHij8VzL3rvZfBfZY0%2Bp7nuhgYk91cCiY4Q%2BiQDL3fRp73QL2%2FeLmam5a55kuQaf6A23d6p3xagcyKEMkJbuidviW64TVuGXDlp8NvbAzxr8jeHIlZZZi%2BxN5JKjxpddEUxAWTPxVxczg%2B4gLNPFgB7HXg8kTP0xM1wOlmAlBzzssXyEVpso2qMLox2v%2FDG%2FwdiRVm7wrvyWNpyTmJNeHGSvkLLKQZUyu5VHU8Z6WTv2dROi2n8aWULyBjvOoQYKUKGtKT8o25l87ldcg8QIILg8V0p2eB%2FccDuw4MseUcqYHgrXBfwvy57%2FiDU3oTRsKrKYaJKqR6rvs%2BcCow3zmu%2BOzk60MUbVhfqbh%2FcCUHBumm%2FzYiaclbQDQpvgNoZJDqaVswBg%2FeXNZfbBn%2FJ59x5oyv8ynYk%2FGxpAGOtWpvacaeGuKyGM5DwnISEiAt1z7fTwMXlfvV9O165gMeMDkZbwzNw3nEPKcRAjVVKH97Wyb5mjW8Ppm2bmQdkKFRNU1LcqByhGEUCbTLy4sDMT49YUASfIogOQdERf39SW1b%2FO%2FEaIL1kK8b1VcaeCke4se%2Fa4OAwCG6pgDfPH%2B4RHNmudxfbZ%2BIYq%2FudDvZEqoN7S9i5EFZFSULAGAfU7gMHSogwerJjeYjE8u0QrnI17Aa4BAdSa%2F4JhJ%2F7RL5Wnd5R3ulNDIg%2FM4PqLjqSGT";
 
 var stream_loaded = false;
 var audio;
-document.querySelector('#button').onclick = function () {
+$("#mic-button").click(function () {
   if (stream_loaded) return;
   stream_loaded = true;
 
@@ -79,6 +79,8 @@ document.querySelector('#button').onclick = function () {
       return false;
     }
 
+    console.log(data);
+
     // Remove punctuation. Make lower case. This is the input text.
     data = data.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
     $("#input").text(data);
@@ -112,5 +114,6 @@ document.querySelector('#button').onclick = function () {
     }
   });
 
-  document.querySelector('#stop').onclick = stream.stop.bind(stream);
-};
+  //document.querySelector('#stop').onclick = stream.stop.bind(stream);
+});
+
