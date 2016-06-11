@@ -45,7 +45,7 @@ $("#mic-button").click(function () {
           }
         }, 500);
       };
-    } else {
+    } else if (!!callback) {
       callback();
     }
   }
