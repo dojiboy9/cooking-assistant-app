@@ -49,7 +49,7 @@ var stateMachine = {
     "prompt": "Are you ready for the ingredients?",
     "commands": [
       {
-        "words": ["yes", "yup", "yep", "sure", "yeah", "m ready", "i am"],
+        "words": ["yes", "yup", "yep", "sure", "yeah", "m ready", "i am", "great"],
         "response": "OK. Here we go!",
         "goto": "list-ingredients"
       },
@@ -153,7 +153,7 @@ var stateMachine = {
     "prompt": "Cover and refrigerate for 30 minutes. Would you like me to set a timer?",
     "commands": [
       {
-        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok", "please"],
         "goto": "set-timer"
       },
 
@@ -168,8 +168,19 @@ var stateMachine = {
   "set-timer": {
     "prompt": "Your timer has been set for 30 minutes.",
     "commands": [
+      {
+        "words": ["thank", "awesome", "great", "suzy", "susie"],
+        "goto": "end"
+      }
     ]
   },
+
+  "end": {
+    "prompt": "Yay! You are done. Just sit back and relax. You deserve it!",
+    "commands": []
+  },
+
+
 
   "infinite-loop": {
     "prompt": "",
