@@ -1,52 +1,76 @@
-<div class="container">
-	<div class="top-bar">
-		<a href="index.html">
-			<img class="back-icon" src="static/back.png"> <!-- Only on the detailed recipe page, would take user back to where they came from -->
-		</a>
-		<img class="icon" src="static/mic.png">
-		<img class="icon active-icon" src="static/mic.png"> <!-- Hidden by default with active-icon class -->
-	</div>
+<html>
+	<head>
+		<link rel='shortcut icon' type='image/x-icon' href='static/logo.png'/>
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- Stuff goes in here -->
+		<link rel="stylesheet" type="text/css" href="static/cook_style.css">
+		<link rel="stylesheet" type="text/css" href="static/fruitsalad.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="top-bar">
+				<a href="index.html">
+					<img class="back-icon" src="static/back.png"> <!-- Only on the detailed recipe page, would take user back to where they came from -->
+				</a>
+				<img class="icon" src="static/mic.png">
+				<img class="icon active-icon" src="static/mic.png"> <!-- Hidden by default with active-icon class -->
+			</div>
 
 
-	<div class="content">
-		<div class="cover-photo">
-			<img src="static/fruitsalad2.jpg">
+			<div class="content">
+				<div class="cover-photo">
+					<img src="static/fruitsalad2.jpg">
+				</div>
+				<div class="recipe-content">
+					<div class="title">
+						<div class="recipe-title"> Fruit Salad </div>
+						<div class="time"> 35 minutes </div>
+					</div>
+					<div class="serving-size">
+						4 Servings
+					</div>
+					<div class="ingredients">
+						<div class="ingredients-title"> Ingredients </div>
+						<ul class="ingredients-list"> 
+							<li> <div class="quantity"> 1 </div> banana </li>
+							<li> <div class="quantity"> 1 </div> cup grapes </li>
+							<li> <div class="quantity"> 1 </div> cup strawberries </li>
+							<li> <div class="quantity"> &frac14; </div> cup orange juice </li>
+						</ul>
+					</div>
+					<div class="instructions">
+						<div class="instructions-title"> Directions </div>
+						<ul class="instructions-list">
+							<li> Slice 1 banana and add to a large bowl. </li>
+							<li> Add 1 cup of grapes to bowl. </li>
+							<li> Slice 1 cup of strawberries and add to bowl. </li>
+							<li> Pour &frac14; cups of orange juice over the fruit and mix to coat. </li>
+							<li> Cover and refrigerate for 30 minutes. </li>
+						</ul>
+					</div>
+
+					<div class="chefs_note">
+						<div class="instructions-title"> Chef's Note </div>
+						<div> Such a refreshing treat on a hot summer day! I make this recipe a lot and it never fails. The combination of these 3 simple fruits are just heavenly.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-bar">
+				<div class="tab-item favorites-tab"> <img src="static/favorites-active.png"> </div> <!-- Replace with icon later -->
+				<div class="tab-item recipe-tab"> <img src="static/recipes.png"> </div> <!-- Replace with icon later -->
+				<div class="tab-item timer-tab"> <img src="static/timer.png"> </div> <!-- Replace with icon later -->
+			</div>
+
 		</div>
-		<div class="recipe-content">
-			<div class="title">
-				<div class="recipe-title"> Fruit Salad </div>
-				<div class="time"> 35 minutes </div>
-			</div>
-			<div class="serving-size">
-				4 Servings
-			</div>
-			<div class="ingredients">
-				<div class="ingredients-title"> Ingredients </div>
-				<ul class="ingredients-list"> 
-					<li> <div class="quantity"> 1 </div> banana </li>
-					<li> <div class="quantity"> 1 </div> cup grapes </li>
-					<li> <div class="quantity"> 1 </div> cup strawberries </li>
-					<li> <div class="quantity"> &frac14; </div> cup orange juice </li>
-				</ul>
-			</div>
-			<div class="instructions">
-				<div class="instructions-title"> Directions </div>
-				<ul class="instructions-list">
-					<li> Slice 1 banana and add to a large bowl. </li>
-					<li> Add 1 cup of grapes to bowl. </li>
-					<li> Slice 1 cup of strawberries and add to bowl. </li>
-					<li> Pour &frac14; cups of orange juice over the fruit and mix to coat. </li>
-					<li> Cover and refrigerate for 30 minutes. </li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	</body>
 
-	<div class="tab-bar">
-		<div class="tab-item favorites-tab"> <img src="static/favorites-active.png"> </div> <!-- Replace with icon later -->
-		<div class="tab-item recipe-tab"> <img src="static/recipes.png"> </div> <!-- Replace with icon later -->
-		<div class="tab-item timer-tab"> <img src="static/timer.png"> </div> <!-- Replace with icon later -->
-	</div>
-
-</div>
-</body>
+	<!-- Javascript files -->
+	<script src="static/js/watson-speech.js"></script>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/state-machine.js"></script>
+	<script src="static/js/main.js"></script>
+</html>

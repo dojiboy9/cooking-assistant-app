@@ -134,8 +134,9 @@ a {
 	height: 100%;
 }
 
-.list-info {
-	
+/* This is the design for something being tapped on */
+a .list-item:hover, .on_tap {
+	background-color: #E3E7E8;
 }
 
 .list-info p {
@@ -201,13 +202,14 @@ a {
 }
 
 .serving-size {
-	color: #009688;
+	color: #727272;
 }
 
 .ingredients-title {
 	padding-top: 30px;
 	padding-bottom: 10px;
 	font-size: 36px;
+	color: #00bcd4;
 }
 
 .ingredients-list {
@@ -233,6 +235,7 @@ a {
 	padding-top: 10px;
 	padding-bottom: 30px;
 	font-size: 36px;
+	color: #00bcd4;
 }
 
 .instructions-list {
@@ -240,7 +243,7 @@ a {
 	list-style-position: inside;
 	padding-left: 0px;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 40px;
 }
 
 .instructions-list li {
@@ -248,3 +251,8 @@ a {
 	padding-top: 30px;
 	border-bottom: 6px dotted #B6B6B6;
 }
+
+.chefs_note {
+	margin-bottom: 50px;
+}
+
