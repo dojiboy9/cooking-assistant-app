@@ -63,7 +63,7 @@ var stateMachine = {
   },
 
   "list-ingredients": {
-    "prompt": "You will need three oranges, blah blah, and something else. Cool!?",
+    "prompt": "You will need 1 banana, 1 cup of grapes, 1 cup of strawberries, and ¼ cups of orange juice. Are you ready?",
     "commands": [
       {
         "words": ["great", "ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok"],
@@ -86,11 +86,11 @@ var stateMachine = {
   },
 
   "instructions-step1": {
-    "prompt": "Set out the large bowl on the table.",
+    "prompt": "Slice 1 banana and add to a large bowl.",
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
-        "goto": "infinite-loop"
+        "goto": "instructions-step2"
       },
 
       {
@@ -101,10 +101,74 @@ var stateMachine = {
     ]
   },
 
+  "instructions-step2": {
+    "prompt": "Add 1 cup of grapes to bowl.",
+    "commands": [
+      {
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "goto": "instructions-step3"
+      },
+
+      {
+        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
+        "response": "Sure thing. I said",
+        "goto": "instructions-step2"
+      }
+    ]
+  },
+
+  "instructions-step3": {
+    "prompt": "Slice 1 cup of strawberries and add to bowl.",
+    "commands": [
+      {
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "goto": "instructions-step4"
+      },
+
+      {
+        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
+        "response": "Sure thing. I said",
+        "goto": "instructions-step3"
+      }
+    ]
+  },
+
+  "instructions-step4": {
+    "prompt": "Pour ¼ cups of orange juice over the fruit and mix to coat.",
+    "commands": [
+      {
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "goto": "infinite-loop"
+      },
+
+      {
+        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
+        "response": "Sure thing. I said",
+        "goto": "instructions-step5"
+      }
+    ]
+  },
+
+  "instructions-step5": {
+    "prompt": "Cover and refrigerate for 30 minutes.",
+    "commands": [
+      {
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "goto": "infinite-loop"
+      },
+
+      {
+        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
+        "response": "Sure thing. I said",
+        "goto": "instructions-step4"
+      }
+    ]
+  },
+
   // TODO: instructions-step2, instructions-step3, ..., etc.
 
   "infinite-loop": {
-    "prompt": "I am done accepting commands. Please update the state machine file.",
+    "prompt": "Your timer has been set for 30 minutes.",
     "commands": [
       {
         "words": ["suzy", "susie"],
