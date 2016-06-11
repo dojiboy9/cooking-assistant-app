@@ -83,11 +83,11 @@ body, html {
 	display: none;
 }
 
-#mic-button:active .icon {
+#mic-button:active .icon, #mic-button.active .icon {
        display: none;
 }
 
-#mic-button:active .active-icon {
+#mic-button:active .active-icon, #mic-button.active .active-icon {
        display: inline-block;
 }
 

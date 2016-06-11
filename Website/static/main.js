@@ -20,6 +20,8 @@ $("#mic-button").click(function () {
   if (stream_loaded) return;
   stream_loaded = true;
 
+  $("#mic-button").addClass("active");
+
   var stream = WatsonSpeech.SpeechToText.recognizeMicrophone({
       token: stt_key,
       keepMicrophone: true
