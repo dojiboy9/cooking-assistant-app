@@ -11,7 +11,7 @@ var audio;
 
 function transition_to_salad() {
   // First, fade the current page to the left
-  $("#slide").animate({width:'toggle'}, 700);
+  //$("#slide").animate({width:'toggle'}, 700);
   // Next, load the proper new page
   $('body').load("/fruit_salad");
 }
