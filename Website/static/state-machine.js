@@ -138,23 +138,7 @@ var stateMachine = {
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
-        "goto": "infinite-loop"
-      },
-
-      {
-        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
-        "response": "Sure thing. I said",
         "goto": "instructions-step5"
-      }
-    ]
-  },
-
-  "instructions-step5": {
-    "prompt": "Cover and refrigerate for 30 minutes.",
-    "commands": [
-      {
-        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
-        "goto": "infinite-loop"
       },
 
       {
@@ -165,34 +149,30 @@ var stateMachine = {
     ]
   },
 
-  // TODO: instructions-step2, instructions-step3, ..., etc.
+  "instructions-step5": {
+    "prompt": "Cover and refrigerate for 30 minutes. Would you like me to set a timer?",
+    "commands": [
+      {
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "goto": "set-timer"
+      },
 
-  "infinite-loop": {
+      {
+        "words": ["repeat", "again", "what", "didn't", "hear", "sorry"],
+        "response": "Sure thing. I said",
+        "goto": "instructions-step4"
+      }
+    ]
+  },
+
+  "set-timer": {
     "prompt": "Your timer has been set for 30 minutes.",
     "commands": [
-      {
-        "words": ["suzy", "susie"],
-        "response": "I refuse to listen to you any more.",
-        "goto": "infinite-loop"
-      }
     ]
+  },
+
+  "infinite-loop": {
+    "prompt": "",
+    "commands": []
   }
-
-/*
-  "list-ingredients": {
-    "prompt": "You will need " + INGREDIENTS,
-    "goto" : "instructions"
-  },
-
-  "instructions": {
-    "prompt": "Are you ready ?"
-    "commands": [
-      {
-        "words": ["I'm ready", "What are the ingredients?", "What do I need"]
-        "response": INGREDIENTS
-        "goto": "instructions"
-      }
-    ]
-  },
-  */
 }
