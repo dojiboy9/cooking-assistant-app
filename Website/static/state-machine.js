@@ -3,7 +3,7 @@ var stateMachine = {
     "prompt": "Hello, what would you like to make today?",
     "commands": [
       {
-        "words": ["fruit", "food", "salad", "make", "would like", "make", "solid", "its all", "it's all", "about", "its", "eccentrics our"],
+        "words": ["fruit", "food", "salad", "would like", "solid", "its all", "it's all", "about", "its", "eccentrics our"],
         "response": "Fruit Salad. Delicious!",
         "goto": "ingredients-ready"
       }
@@ -52,13 +52,7 @@ var stateMachine = {
         "words": ["yes", "yup", "yep", "sure", "yeah", "m ready", "i am", "great"],
         "response": "OK. Here we go!",
         "goto": "list-ingredients"
-      },
-
-      {
-        "words": ["serving", "back"],
-        "goto": "count-servings"
-      },
-
+      }
     ]
   },
 
@@ -69,18 +63,6 @@ var stateMachine = {
         "words": ["great", "m ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok", "i am"],
         "response": "Let's begin!",
         "goto": "instructions-step1"
-      },
-
-      {
-        "words": ["repeat", "again", "ingredients", "what", "didn't", "hear", "sorry"],
-        "response": "Not a problem.",
-        "goto": "list-ingredients"
-      },
-
-      {
-        "words": ["serving"],
-        "response": "Sure.",
-        "goto": "count-servings"
       }
     ]
   },
@@ -169,7 +151,7 @@ var stateMachine = {
     "prompt": "Your timer has been set for 30 minutes.",
     "commands": [
       {
-        "words": ["thank", "awesome", "great", "suzy", "susie"],
+        "words": ["thank", "awesome", "great", "suzy", "susie", "next", "excellent"],
         "goto": "end"
       }
     ]
