@@ -3,8 +3,8 @@
 var curState = "";
 var acceptInput = 1;
 
-var tts_key = "Lc0SY8eMYVtiSKn3WqJWJ0ptudGHGMxcn2JLSkFaLt%2FaTke%2BobmWvLcSpz0cOQeK4uo4Prgzy%2FY8YuHurVjnsVEEm4MzEeYNtjj%2FmR95k7Fr9FYR%2F2eN9Vn4JX33Lp9vP4v%2BrvusYdWf212IOS3nv8%2BnUl7eSZgVE2LTusNHV8gzKGcZoyl4Je9PmfsE%2Boue3FyefaIdPGFT7oEDro6iPfpm7HWlqQkXqAVuCU1CUuxiHeZkr8bGw6ekO6suGs%2FKq9Q9%2FCSJVpAl9U8%2FTstcTuc%2FIHR%2BGDV3v5f%2FN4%2BnI4j942EEs6xTjcPu8jVIOY2EWHTDMVO3HkcLY6FXpYn2v7RB%2B6T563N1UbBykB%2FO4hJkmhKcATbS6cr8SezgnIxesHsYZbAPsjepB91A8YdS2KvFEncbr8nHw3PpnnHX5DJMNxDC7IcUgcvYi8BQPsWjyqW%2BpeiAapBNskEj7fHmVqBH6lZKibqkYIVDkvlAzXotC4r0UkFuZX9hhj4KbdBKzjZ30p3y7cC9SfpQ5VcgcoZtWV3758O10qwxKvw6filK86%2F7p7gGg4u4Cb91W%2FnQcCmnnNXzyd4Ikx0Za4VDv9aiqE5cs8AQRErg6ctr5JQCy%2F86VAq7i96gNbBPId8O7cqe%2BB9zV4hf67Z5uW%2FFC9qiuXHD%2B9JznQ2uu%2F2%2Fe1A2GYFKrBHkbNVaeSUBxa0%2BG9Q6ywv1gRzWAihTb7u32kcOkC5aLROw5JkKFxdWplXhZvXYZknYBnZH6Uy0hcYFEpMIhiuXNZdpB67wdoBjKBEZCRWvZ2bP4dkk94aqwcfha48UQIuexGGpJXBPDpLOKkSAtq580vIzn3g0jkR0U6%2FTww%2BRmK%2F7";
-var stt_key = "VYXNhAd6lqaPn4FsIz%2Bjev575G%2F0eAnbR0IWMXDfX631%2BbKTCgVstIX8YYBLuCqJbYr56PYSm4dG0Njltsua1RauFhsIj3N7oGB%2Bmi6pzlhvZnPJyXSLykPNTe%2BHztvPpGjEzsu4nmIo671tgsVx0x9MlisCTXO%2FxFzaIpQfntS%2FIcedvciCkhCZYvAAFuKA%2BGdjxbsrYG6L59URjgSjGzjEtLWPLF2srELl3siq2oSS2N8gjHjTGAV84LNSXiLGlA1Lel2D8oMk5iLtxFutqweMOs34NGsUBbfKTBcR%2Bj0w6wirePQBQyvSl18zd8XvDjISplejXz91UYN54zzjba%2B%2BQGHCJhzTprYeoBSzO4%2Bj55JlTbL5%2FAjIf6k0ru9fNJUqjYy7CerZKWhpz7LIReq%2BBoOfPh%2FvEzI8VJh11TQjhN6SMvPZFMti2JbEZCODZ6yBXiygMXTPT%2F9pfNFyMGSSJcc%2B4oE5Q5QStZa4kSHNeaQu%2Bss1x%2B80n4bUgWG06jiJxpxFz8fz8K4CGpi4RVg23bo3WERLMYs6FbM1dLElnqIZrm0W6gRzGVNJ3b1M358FjkfeDyfPbq5AIOqy0QqKoKU%2Bx7jwg788Dq2pjimvpXw%2F08CFSIavq5p7rQJ6Ec9gtpAXPhEZCexwivjri%2ByDC0thp%2FHV9%2BB%2BMfta0SsqJkqR3w3crUSD93plxcuEUK8R%2BfhmJFHnxvu5i2Ta34Or7eOT8SGzl8qVcFBCwDfVGXfVcyzoAKqbTarolfeG4%2BVuGkfwBqG3thhQokuG3PWWLKeUTrqTPvUFQVGMM4QGezeXybf2asO5DuILUkgXFdPImRl1vOVljsyx%2B8SBpBNMsVJUD5NL";
+var tts_key = "RKJb4SAsXjTy7flPE4smeH3uBZN0Sj8rF5I5zJjKZpBv5i69%2FEYr0kCtU1N9da8mw7GDGWyzGBhRvEQ2%2FXmoASiumuFXT07dM4cecLogbfEls%2BACBpWgNIm7qJ9lFjhpFQ%2B2olmoLGrWjP6h6RrIUAOn96Z0%2FMD1l7gR2F8ipOPxDL7Ya%2Bm2%2B58md84YVJ%2FHu5T10WdKZ4ghjRIM051e4GjjSl1FEJMUgr%2FR22JW9ZxJ9oTVhcRAl370QfB66sXCNrYGH1sK7IPPNU%2FPFPW%2BlCJTywn4owwb%2B6Sz2rX3QNwCv4rrCqNPw3xrvUTpUSYTya%2FM32%2B6bGLutnGWyqbJRUEy9K1Wpeth29O4GO9ySdM7AOn2L6uqsCrkFR1%2BuYGEIpyx0tMVzi9KoLr4XV5ZOIkxkr7JC7a6k1DGUXFsn64U0pJr62qGoK%2F2COPHogoai%2FmET%2BG0mRK3qyShL9F%2F8LA80AMj%2FircKNO%2BMi8cjXDqnQcA4mpykdM7D%2Bdr193yHw1NkIvZSgaIr8IGjE7XHbcoRxD35D1OYDN2izwOfYWkolmvHlhNjG3W1V%2F86wU2MjRWnv9EcMp0h6ZM87q1UbEZOF6lPOTyhON4LoDl9hUDb3wpH%2Bh3DeHv3597EH%2BnKThsvjE9iVpLeXGxDHkdh1kUtZxA5VJsP%2FLOshuGLvWzpKqETDfVa7vmYeU9BU8v6DlTvjcrqP4w7nvn4X5tsXAE65vEce6f%2FUNLXYeJax0S7bWSo9gh8FVMWKfnJznnsSKSdUaqRBdFY2aLzCRbpe5KiPaZD0TdnthCqOm2MufTPkC8YY7VeW5sOafIyEyRA3sb8hx3MMEYKwkAs3IzELWSFbmz3PKI";
+var stt_key = "sTx2Fi1BKxDrq9k4IVVrYW2PfYxYk75Lpp2QjZlIs5Z0lHLE%2FFpHO4P6FO3obsySq4x6NKgncg02CutmDKUBEccfquDi7F214sSwVcR%2B67l%2BQI5vx7fcl8RIYBaxdCrgO7wTTmNbPASSO23RhCTTdSnVu5bshT2lMafbw3PuYPrj9OrBwL23SjzQ5ZXJnH2GARPhgXcqVcUgpmLmWLjKQjxSF6YuEYlPrv0S6qzD6Q4j9G98Vz%2BxWvIhwUWj1wfHqX%2FcmEPtbalMo1FyFYQ5QwqjBsoNvXuowmaJu3RM8LlEzYiXEkCpPp02CJ7jjopYTK8Ipumi800VcmL09OzdlHZikLI2l5LLj90Ih0vNk7pyLwYHu9YeuInfsj%2FVPaNMYqk3hf4PbpNPBo0fhWDrPjH%2FqU8CVapObVnKG9osZVOyZ2uf1KymtELy3R6PLgwAFJemT2n%2FUX1R9XfcyXrtTXFndCryl9LghJY3R%2BY2MMg%2FyL43fW1XFTHMu7FlDjWtaoZxZmCXebZkyvPn1fipWuIc%2FJq%2B%2F0vbEUzTVJzTll19GIXyZr%2B3JnE7yTcHCnAkaqED6KUVDgn6D5U5f0X1QvTXvipzzjiwrCgBZ34awadXsz%2BxUJQCmAjakgkVqC5SnL6Pq5iB8lJqo%2BMFmBydScrSlTZcKDjVCeOIoON63BEepOVRUv4it%2FoEpckUJEjmPvuKpEcskz0kBsdGUwVMfEd6sh7M94XlTe9uX2vpV%2B5nKJXL4P6P5aclU2a%2F56XwAcfX9QCgpdbH8T55drybhBtrquA4HLojdj4cwpwzeIGM0kJ1pWwOC8NhPU5Z2LVB2gQltwllNAuOJ2lofVdPXkxpPVHfOpbK";
 
 var stream_loaded = false;
 var audio;
@@ -28,23 +28,62 @@ function transition_to_salad() {
   });
 }
 
+function transition_to_smoothie() {
+  // First animate by scrolling down to the salad item
+  var top = $("#smoothie").offset().top - 500;
+  $(".content").animate({ scrollTop: top}, 1000, "swing", function() {
+    setTimeout(function(){
+      $("#smoothie .list-item").addClass("on_tap");
+
+      setTimeout(function(){
+        // Next, load the proper new page
+        $('body').load("/smoothie.html");
+      }, 200)
+    },500)
+  });
+}
+
 function do_transitions(nextState) {
   if (nextState == "ingredients-ready") {
     transition_to_salad();
   } else if (nextState == "list-ingredients") {
-    var top = $("#ingrid").position().top - 500;
+    var top = $("#ingrid").offset().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
+  } else if (nextState == "instructions-step1") {
+    var top = $("#instruc").offset().top - 500;
     $(".content").animate({ scrollTop: top}, 1000);
   } else if (nextState == "set-timer") {
     console.log("Starting timer");
-    var top = $("#timer").position().top - 500;
+    $("#timer-container").show();
+    var top = $("#timer").offset().top - 500;
     $(".content").animate({ scrollTop: top}, 1000);
     setInterval(function(){
-      console.log("Starting timer");
       the_time --;
       var minutes = Math.floor(the_time / 60);
       var seconds = the_time % 60;
       var time_text = "" + minutes + ":" + seconds;
-      $("#timer-container").show();
+      $("#timer").text(time_text);
+    }, 1000)
+  }
+
+  if (nextState == "smoothie-ingredients-ready") {
+    transition_to_smoothie();
+  } else if (nextState == "smoothie-list-ingredients") {
+    var top = $("#ingrid").offset().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
+  } else if (nextState == "smoothie-instructions-step1") {
+    var top = $("#instruc").offset().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
+  } else if (nextState == "smoothie-set-timer") {
+    console.log("Starting timer");
+    $("#timer-container").show();
+    var top = $("#timer").offset().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
+    setInterval(function(){
+      the_time --;
+      var minutes = Math.floor(the_time / 60);
+      var seconds = the_time % 60;
+      var time_text = "" + minutes + ":" + seconds;
       $("#timer").text(time_text);
     }, 1000)
   }
