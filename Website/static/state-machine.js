@@ -9,7 +9,7 @@ var stateMachine = {
       },
 
       {
-        "words": ["smoothie", "juice", "mixed", "berr", "smoothy", "frozen"],
+        "words": ["smoothie", "smooth", "juice", "mixed", "berr", "smoothy", "frozen"],
         "response": "A smoothie! That's delicious",
         "goto": "smoothie-ingredients-ready"
       },
