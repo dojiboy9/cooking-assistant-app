@@ -28,6 +28,22 @@ function transition_to_salad() {
   });
 }
 
+function do_transitions(nextState) {
+  if (nextState == "ingredients-ready") {
+    transition_to_salad();
+  } else if (nextState == "set-timer") {
+    console.log("Starting timer");
+    setInterval(function(){
+      the_time --;
+      var minutes = Math.floor(the_time / 60);
+      var seconds = the_time % 60;
+      var time_text = "" + minutes + ":" + seconds;
+      $("#timer-container").style.display = "block";
+      $("#timer").text(time_text);
+    }, 1000)
+  }
+}
+
 $("#mic-button").click(function () {
   if (stream_loaded) return;
   stream_loaded = true;
@@ -127,19 +143,7 @@ $("#mic-button").click(function () {
           var nextState = commands[k].goto;
 
           // Respond. Upon completion, apply the state transition.
-          if (nextState == "ingredients-ready") {
-            transition_to_salad();
-          } else if (nextState == "set-timer") {
-            console.log("Starting timer");
-            setInterval(function(){
-              the_time --;
-              var minutes = Math.floor(the_time / 60);
-              var seconds = the_time % 60;
-              var time_text = "" + minutes + ":" + seconds;
-              $("#timer-container").style.display = "block";
-              $("#timer").text(time_text);
-            }, 1000)
-          }
+          do_transitions(nextState);
           failed = 0;
           watsonSay(commands[k].response, function() {
             setState(nextState);
@@ -156,6 +160,7 @@ $("#mic-button").click(function () {
         var nextState = commands[k].goto;
 
         // Respond. Upon completion, apply the state transition.
+        do_transitions(nextState);
         watsonSay(commands[k].response, function() {
           setState(nextState);
         });
