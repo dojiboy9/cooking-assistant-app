@@ -221,7 +221,7 @@ var stateMachine = {
   },
 
   "smoothie-list-ingredients": {
-    "prompt": "You will need some things.",
+    "prompt": "You will need half a banana, 1 cup of frozen mixed berries, and 1 cup of milk. Are you ready to begin?",
     "commands": [
       {
         "words": ["great", "m ready", "next", "first step", "yes", "yup", "yep", "instructions", "sure", "yeah", "okay", "ok", "i am"],
@@ -232,7 +232,7 @@ var stateMachine = {
   },
 
   "smoothie-instructions-step1": {
-    "prompt": "Go get 'em tiger.",
+    "prompt": "Slice 1 banana and add it to the blender.",
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
@@ -248,7 +248,7 @@ var stateMachine = {
   },
 
   "smoothie-instructions-step2": {
-    "prompt": "Add 1 cup of grapes to bowl.",
+    "prompt": "Add 1 cup of frozen mixed berries.",
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
@@ -264,7 +264,7 @@ var stateMachine = {
   },
 
   "smoothie-instructions-step3": {
-    "prompt": "Slice 1 cup of strawberries and add to bowl.",
+    "prompt": "Add one cup of milk.",
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
@@ -280,10 +280,10 @@ var stateMachine = {
   },
 
   "smoothie-instructions-step4": {
-    "prompt": "Pour ¼ cups of orange juice over the fruit and mix to coat.",
+    "prompt": "Use the ice-crush setting on the blender, and blend until smooth. Add more milk if needed.",
     "commands": [
       {
-        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok"],
+        "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok", "thanks", "excellent"],
         "goto": "smoothie-instructions-step5"
       },
 
@@ -296,11 +296,11 @@ var stateMachine = {
   },
 
   "smoothie-instructions-step5": {
-    "prompt": "Cover and refrigerate for 30 minutes. Would you like me to set a timer?",
+    "prompt": "Enjoy your delicious smoothie!",
     "commands": [
       {
         "words": ["great", "ready", "next", "step", "yes", "yup", "sure", "yeah", "done", "okay", "ok", "please"],
-        "goto": "smoothie-set-timer"
+        "goto": "smoothie-end"
       },
 
       {
@@ -322,7 +322,7 @@ var stateMachine = {
   },
 
   "smoothie-end": {
-    "prompt": "Yay! You are done. Just sit back and relax. You deserve it!",
+    "prompt": "",
     "commands": []
   },
 }
