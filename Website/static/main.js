@@ -22,7 +22,7 @@ function transition_to_salad() {
 
       setTimeout(function(){
         // Next, load the proper new page
-        $('body').load("/fruit_salad");
+        $('body').load("/fruit_salad.html");
       }, 200)
     },500)
   });
@@ -31,14 +31,20 @@ function transition_to_salad() {
 function do_transitions(nextState) {
   if (nextState == "ingredients-ready") {
     transition_to_salad();
+  } else if (nextState == "list-ingredients") {
+    var top = $("#ingrid").position().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
   } else if (nextState == "set-timer") {
     console.log("Starting timer");
+    var top = $("#timer").position().top - 500;
+    $(".content").animate({ scrollTop: top}, 1000);
     setInterval(function(){
+      console.log("Starting timer");
       the_time --;
       var minutes = Math.floor(the_time / 60);
       var seconds = the_time % 60;
       var time_text = "" + minutes + ":" + seconds;
-      $("#timer-container").style.display = "block";
+      $("#timer-container").show();
       $("#timer").text(time_text);
     }, 1000)
   }
