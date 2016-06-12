@@ -10,6 +10,8 @@ var stream_loaded = false;
 var audio;
 
 var failed = 0;
+var the_time = 30*60;
+var timer_on = false;
 
 function transition_to_salad() {
   // First animate by scrolling down to the salad item
@@ -127,6 +129,16 @@ $("#mic-button").click(function () {
           // Respond. Upon completion, apply the state transition.
           if (nextState == "ingredients-ready") {
             transition_to_salad();
+          } else if (nextState == "set-timer") {
+            console.log("Starting timer");
+            setInterval(function(){
+              the_time --;
+              var minutes = Math.floor(the_time / 60);
+              var seconds = the_time % 60;
+              var time_text = "" + minutes + ":" + seconds;
+              $("#timer").show();
+              $("#timer").text(time_text);
+            }, 1000)
           }
           failed = 0;
           watsonSay(commands[k].response, function() {
