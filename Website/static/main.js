@@ -22,7 +22,7 @@ function transition_to_salad() {
 
       setTimeout(function(){
         // Next, load the proper new page
-        $('body').load("/fruit_salad.html");
+        $('body').load("/fruit_salad");
       }, 200)
     },500)
   });
