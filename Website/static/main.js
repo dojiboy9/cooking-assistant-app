@@ -198,6 +198,7 @@ $("#mic-button").click(function () {
         }
       }
 
+      /*
       console.log(failed);
       if (failed == 2) {
         failed = 0;
@@ -219,7 +220,7 @@ $("#mic-button").click(function () {
           });
           failed += 1;
         }
-      }
+      } */
     }
   });
 

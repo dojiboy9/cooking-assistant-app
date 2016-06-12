@@ -1,0 +1,63 @@
+	<body>
+		<div class="container">
+			<div class="top-bar">
+				<a href="index.html">
+					<img class="back-icon" src="static/back.png"> <!-- Only on the detailed recipe page, would take user back to where they came from -->
+				</a>
+				<img class="icon" src="static/mic.png">
+				<img class="icon active-icon" src="static/mic-active.png"> <!-- Hidden by default with active-icon class -->
+			</div>
+
+
+			<div class="content">
+				<div class="cover-photo">
+					<img src="static/smoothie.jpg">
+				</div>
+				<div class="recipe-content">
+					<div class="title">
+						<div class="recipe-title"> Mixed Berry Smoothie </div>
+						<div class="time"> 3 minutes </div>
+					</div>
+					<div class="serving-size">
+						4 Servings
+					</div>
+					<div class="ingredients" id="ingrid">
+						<div class="ingredients-title"> Ingredients </div>
+						<ul class="ingredients-list"> 
+							<li> <div class="quantity"> &frac12; </div> banana </li>
+							<li> <div class="quantity"> 1 </div> cup frozen mixed berries </li>
+							<li> <div class="quantity"> 1 </div> cup milk </li>
+						</ul>
+					</div>
+					<div class="instructions">
+						<div class="instructions-title"> Directions </div>
+						<ul class="instructions-list">
+							<li> Slice 1 banana and add it to the blender. </li>
+							<li> Add 1 cup of frozen mixed berries. </li>
+							<li> Add one cup of milk. </li>
+							<li> Use the ice-crush setting on the blender, and blend until smooth. Add more milk if needed. </li>
+							<li> Enjoy your delicious smoothie! </li>
+						</ul>
+					</div>
+
+					<div class="chefs_note">
+						<div class="instructions-title"> Chef's Note </div>
+						<div> Such a refreshing treat on a hot summer day! I make this smoothie almost every day.</div>
+					</div>
+
+					<br />
+					<div id="timer-container" style="display: none;">
+						<div class="instructions-title"> Timer </div>
+						<div class="timersomthing" id="timer">30:00</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-bar">
+				<div class="tab-item favorites-tab"> <img src="static/favorites-active.png"> </div> <!-- Replace with icon later -->
+				<div class="tab-item recipe-tab"> <img src="static/recipes.png"> </div> <!-- Replace with icon later -->
+				<div class="tab-item timer-tab"> <img src="static/timer.png"> </div> <!-- Replace with icon later -->
+			</div>
+
+		</div>
+	</body>
